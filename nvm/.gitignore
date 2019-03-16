@@ -1,0 +1,4 @@
+nvm-*.pkg*
+pkg/
+src/
+*.zip
