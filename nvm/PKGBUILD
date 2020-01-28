@@ -4,8 +4,8 @@
 # * added pkgverforked
 
 pkgname=nvm
-pkgver=0.34.0
-pkgrel=2
+pkgver=0.35.2
+pkgrel=1
 pkgdesc="Node Version Manager - Simple bash script to manage multiple active node.js versions"
 url="https://github.com/creationix/nvm"
 arch=('any')
@@ -15,11 +15,11 @@ install="${pkgname}.install"
 source=("https://github.com/creationix/nvm/archive/v${pkgver}.zip"
         "init-nvm.sh"
         "install-nvm-exec")
-sha256sums=('7785788fadae495cd65c7612f4b4ed16955048eaebfe69a6009e5e3265b280f0'
-            '692317bfd036557f59543fef9b67ff38de68208d30361fe385291f58d3ac0425'
-            '795d3f6ad3076aa4b0bb9cc48a2e6e79331d121278a887667fb707181a54a10b')
+sha512sums=('b3c40fbafff536fcc8decfafb116c47f1f374eedb0a76220948a463c8b21fe4ee3434635861c82d3106e5d89e8791e00180bd198b5279cace2a659a64ed4e442'
+            'b6a1906f644aa3cab17baeaf9e8bf0b256215b5fa082d73261095f45b5f16769fa91bccc597b22c2cfda0751b0e7f5865e2ff77176bb3e0998966be1fee5a76c'
+            '148753d8d76cda4be75139628c04784b7abb70859d3815aa651bfd91a326b8c6b71897c27e7c1482c3255f271057ebc09147cbaba9faa36a66c2e6e2c6d4612a')
 releasepage=('https://aur.archlinux.org/cgit/aur.git/tree/?h=nvm')
-pkgverforked=('0.34.0-2')
+pkgverforked=('0.35.2-1')
 
 package() {
   cd "${srcdir}"
