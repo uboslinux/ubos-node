@@ -1,4 +1,4 @@
 nvm-*.pkg*
 pkg/
 src/
-*.zip
+nvm-*.tar.gz
